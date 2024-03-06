@@ -542,6 +542,7 @@ a {
 }
 
 /*! Модальное окно */
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -603,4 +604,10 @@ a {
     height: 18px;
     width: 18px;
     fill: #000;
+}
+
+.close-icon-container:hover
+.close-icon {
+
+    fill: var(--accent-color);
 }
