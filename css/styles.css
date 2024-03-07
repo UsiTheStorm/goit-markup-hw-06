@@ -570,6 +570,7 @@ a {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    padding: 40px;
 }
 
 .backdrop.is-hidden .modal {
@@ -579,11 +580,7 @@ a {
 .backdrop.is-hidden {
     opacity: 0;
 }
-.modal-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
+
 .close-icon-container {
     position: absolute;
     top: 8px;
@@ -600,6 +597,7 @@ a {
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
+
 .close-icon {
     height: 18px;
     width: 18px;
@@ -611,4 +609,82 @@ a {
 
     fill: var(--accent-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Форма модального вікна */
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-header {
+    font-size: 20px;
+    font-weight: 700;
+    /* line-height: 23px;
+    letter-spacing: 0.03em; */
+    text-align: center;
+    color: var(--prim-text-color);
+}
+
+.form-fields-container {
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+.form-field {
+    margin-bottom: 10px;
+}
+.form-lable {
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: var(--sec-text-color);
+}
+.form-input {
+    width: 100%;
+    box-sizing: border-box;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    padding-left: 42px;
+    margin-top: 4px;
+
+    color: var(--prim-text-color);
+    /* font-size: 16px; */
+}
+
+.form-comment {
+    width: 100%;
+    box-sizing: border-box;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+
+    margin-top: 4px;
+    padding: 12px 16px;
+
+    color: var(--prim-text-color);
+    /* font-size: 16px; */
+}
+
+.form-submit {
+    
+width: 200px;
+height: 50px;
+border-radius: 4px;
+background-color: var(--accent-color);
+border: none;
+
+color:var(--footer-main-text-color);
+font-size: 16px;
+font-weight: 700;
+letter-spacing: 0.06em;
+text-align: center;
+
+
+box-shadow: 0px 4px 4px 0px #00000026;
+
+margin-top: 30px;
 }
