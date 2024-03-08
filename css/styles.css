@@ -712,11 +712,31 @@ a {
   letter-spacing: 0.01em;
 }
 
+.form-checkbox {
+  position: relative;
+}
+
 .form-check-text {
   color: var(--sec-text-color);
   padding-left: 36px;
   cursor: pointer;
 }
+.form-check-text::before {
+  position: absolute;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 3px solid rgba(33, 33, 33, 1);
+  border-radius: 2px;
+  cursor: pointer;
+  margin-left: 12px;
+
+  content: '';
+}
+.form-check:checked ~ .form-check-text::before {
+  border-color: green;
+}
+
 .term-link {
   color: var(--accent-color);
 }
