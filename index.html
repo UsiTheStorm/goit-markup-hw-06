@@ -396,7 +396,7 @@
     </main>
     <!-- Футер -->
     <footer class="footer">
-      <div class="container items footer-blocks">
+      <div class="container footer-blocks">
         <div>
           <a class="logo footer-logo link-undecor" href="./index.html"
             ><span class="logo-blue">Web</span>Studio</a
@@ -464,23 +464,36 @@
           </ul>
         </div>
         <div class="footer-mailing">
-          <form class="footer-form">
+          <form class="footer-mailing-form">
             <lable for="footer_email_form" class="footer-form-title"
               >Підпишіться на розсилку</lable
             >
-            <input
-              type="email"
-              id="footer_email_form"
-              class="footer-form-input"
-            />
-            <button type="submit">Підписатися</button>
+            <div class="footer-form-input-wrapper">
+              <input
+                type="email"
+                id="footer_email_form"
+                class="footer-form-input"
+                placeholder="E-mail"
+              />
+              <button type="submit" class="footer-submit">
+                Підписатися<svg
+                  class="footer-submit-icon"
+                  width="24"
+                  height="24"
+                >
+                  <use
+                    href="./images/icons-unoptimized.svg#icon-footer-send"
+                  ></use>
+                </svg>
+              </button>
+            </div>
           </form>
         </div>
       </div>
     </footer>
 
     <!-- Модальное окно -->
-    <div class="backdrop is-h" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <!-- Форма -->
         <form name="modal-form" class="modal-form" autocomplete="on">
