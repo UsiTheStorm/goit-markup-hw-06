@@ -730,11 +730,16 @@ a {
   border-radius: 2px;
   cursor: pointer;
   margin-left: 12px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   content: '';
 }
 .form-check:checked ~ .form-check-text::before {
-  border-color: green;
+  border: none;
+  background-color: var(--accent-color);
+  background-image: url(../images/check.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .term-link {
